@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "1A30F1D5-7888-44FF-9FF4-55E6171A7AA6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "UtilitiesTest\/testBoundingBoxFrame10423",
+        "UtilitiesTest\/testBoundingBoxFrame914",
+        "UtilitiesTest\/testPerformanceExample",
+        "UtilitiesTest\/testReferenzFrameLaden"
+      ],
+      "target" : {
+        "containerPath" : "container:Dataset.xcodeproj",
+        "identifier" : "358A10A02D952568009668B3",
+        "name" : "DatesetGeneratorTest"
+      }
+    }
+  ],
+  "version" : 1
+}
