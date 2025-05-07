@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//  Dataset
+//
+//  Created by Markus Schmid on 07.05.25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+GCC_OPTIMIZATION_LEVEL = s

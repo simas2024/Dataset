@@ -45,8 +45,8 @@ ErkennungKonfig config;
     
     
     set_path = std::string(PROJECT_SOURCE_DIR) + "/Test/data/";
-    clip_path = set_path + "clip.mov";
-    maske_bw_path = set_path + "maske01bw640x424.png";
+    clip_path = set_path + "clip640x424.mov";
+    maske_bw_path = set_path + "maske640x424.png";
     json_path = set_path + "clip.json";
     debug_path = set_path + "debug/";
     yolo_path = set_path + "yolo/";

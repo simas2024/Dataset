@@ -1,0 +1,33 @@
+//
+//  Base.xcconfig
+//  Dataset
+//
+//  Created by Markus Schmid on 07.05.25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// OpenCV- und nlohmann-json-Header für beide Architekturen
+HEADER_SEARCH_PATHS = \
+  /opt/homebrew/opt/opencv/include/opencv4 \
+  /opt/homebrew/opt/nlohmann-json/include \
+  /usr/local/opt/opencv/include/opencv4 \
+  /usr/local/opt/nlohmann-json/include
+
+// Library-Pfade für beide Architekturen
+LIBRARY_SEARCH_PATHS = \
+  /opt/homebrew/lib \
+  /usr/local/lib
+
+// OpenCV-Links (bleiben gleich)
+OTHER_LDFLAGS = \
+  -lopencv_core \
+  -lopencv_imgproc \
+  -lopencv_highgui \
+  -lopencv_video \
+  -lopencv_videoio \
+  -lopencv_features2d \
+  -lopencv_xfeatures2d \
+  -lopencv_flann \
+  -lopencv_imgcodecs

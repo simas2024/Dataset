@@ -7,22 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		351D1A4C2DCA3EB4004A93DD /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA32D92F60800735D68 /* libopencv_core.a */; };
-		351D1A4D2DCA3EC3004A93DD /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCAD2D92F64C00735D68 /* libopencv_imgproc.a */; };
-		351D1A4E2DCA3ED0004A93DD /* libopencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCB12D92F73E00735D68 /* libopencv_video.a */; };
-		351D1A4F2DCA3ED9004A93DD /* libopencv_videoio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCB32D92F74900735D68 /* libopencv_videoio.a */; };
-		358A10AE2D952EA5009668B3 /* libopencv_videoio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCB32D92F74900735D68 /* libopencv_videoio.a */; };
-		358A10AF2D952EA5009668B3 /* libopencv_xfeatures2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCAF2D92F66000735D68 /* libopencv_xfeatures2d.a */; };
-		358A10B02D952EA5009668B3 /* libopencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCB12D92F73E00735D68 /* libopencv_video.a */; };
-		358A10B12D952EA5009668B3 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCAD2D92F64C00735D68 /* libopencv_imgproc.a */; };
-		358A10B22D952EA5009668B3 /* libopencv_imgcodecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCAB2D92F64100735D68 /* libopencv_imgcodecs.a */; };
-		358A10B32D952EA5009668B3 /* libopencv_highgui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA92D92F63600735D68 /* libopencv_highgui.a */; };
-		358A10B42D952EA5009668B3 /* libopencv_flann.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA72D92F62600735D68 /* libopencv_flann.a */; };
-		358A10B52D952EA5009668B3 /* libopencv_features2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA52D92F61900735D68 /* libopencv_features2d.a */; };
-		358A10B62D952EA5009668B3 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA32D92F60800735D68 /* libopencv_core.a */; };
-		35B2CCA62D92F62000735D68 /* libopencv_features2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA52D92F61900735D68 /* libopencv_features2d.a */; };
-		35B2CCAA2D92F63A00735D68 /* libopencv_highgui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCA92D92F63600735D68 /* libopencv_highgui.a */; };
-		35B2CCAC2D92F64500735D68 /* libopencv_imgcodecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2CCAB2D92F64100735D68 /* libopencv_imgcodecs.a */; };
+		35A7428A2DCB1B3400F884FF /* DatasetGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A742862DCB1B3400F884FF /* DatasetGenerator.cpp */; };
+		35A7428B2DCB1B3400F884FF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A742872DCB1B3400F884FF /* main.cpp */; };
+		35A7428C2DCB1B3400F884FF /* DatasetGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35A742862DCB1B3400F884FF /* DatasetGenerator.cpp */; };
+		35A7429F2DCB1BA100F884FF /* DatasetGeneratorTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 35A7429D2DCB1B9700F884FF /* DatasetGeneratorTest.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,89 +28,40 @@
 /* Begin PBXFileReference section */
 		358A10A12D952568009668B3 /* DatesetGeneratorTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatesetGeneratorTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		358A10B92D953073009668B3 /* Test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test.xctestplan; sourceTree = "<group>"; };
+		359FB6DE2DCB22FE00707525 /* convert_yolo_to_createml.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = convert_yolo_to_createml.py; sourceTree = "<group>"; };
+		359FB6DF2DCB22FE00707525 /* make_one_json.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = make_one_json.py; sourceTree = "<group>"; };
+		359FB6E02DCB22FE00707525 /* split_train_val.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = split_train_val.py; sourceTree = "<group>"; };
+		35A742782DCB127200F884FF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		35A742792DCB12E700F884FF /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		35A7427A2DCB132500F884FF /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		35A7427C2DCB1AEE00F884FF /* classes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = classes.txt; sourceTree = "<group>"; };
+		35A7427D2DCB1AEE00F884FF /* clip.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clip.json; sourceTree = "<group>"; };
+		35A7427E2DCB1AEE00F884FF /* maske_sw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maske_sw.png; sourceTree = "<group>"; };
+		35A742852DCB1B3400F884FF /* DatasetGenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DatasetGenerator.hpp; sourceTree = "<group>"; };
+		35A742862DCB1B3400F884FF /* DatasetGenerator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DatasetGenerator.cpp; sourceTree = "<group>"; };
+		35A742872DCB1B3400F884FF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		35A7428D2DCB1B9700F884FF /* frame_026059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_026059.png; sourceTree = "<group>"; };
+		35A7428F2DCB1B9700F884FF /* frame_000914.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_000914.png; sourceTree = "<group>"; };
+		35A742902DCB1B9700F884FF /* frame_010423.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_010423.png; sourceTree = "<group>"; };
+		35A742912DCB1B9700F884FF /* frame_010447.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_010447.png; sourceTree = "<group>"; };
+		35A742922DCB1B9700F884FF /* frame_026059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_026059.png; sourceTree = "<group>"; };
+		35A742932DCB1B9700F884FF /* frame_035456.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_035456.png; sourceTree = "<group>"; };
+		35A742942DCB1B9700F884FF /* frame_035683.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_035683.png; sourceTree = "<group>"; };
+		35A742952DCB1B9700F884FF /* frame_035780.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_035780.png; sourceTree = "<group>"; };
+		35A742992DCB1B9700F884FF /* clip.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clip.json; sourceTree = "<group>"; };
+		35A7429A2DCB1B9700F884FF /* clip640x424.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = clip640x424.mov; sourceTree = "<group>"; };
+		35A7429B2DCB1B9700F884FF /* maske640x424.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maske640x424.png; sourceTree = "<group>"; };
+		35A7429D2DCB1B9700F884FF /* DatasetGeneratorTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DatasetGeneratorTest.mm; sourceTree = "<group>"; };
+		35A742A02DCB1BF100F884FF /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		35A742A12DCB1BF100F884FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		35B2CC982D92F5B200735D68 /* Dataset */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Dataset; sourceTree = BUILT_PRODUCTS_DIR; };
-		35B2CCA32D92F60800735D68 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = ../../../../../opt/homebrew/lib/libopencv_core.a; sourceTree = "<group>"; };
-		35B2CCA52D92F61900735D68 /* libopencv_features2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_features2d.a; path = ../../../../../opt/homebrew/lib/libopencv_features2d.a; sourceTree = "<group>"; };
-		35B2CCA72D92F62600735D68 /* libopencv_flann.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_flann.a; path = ../../../../../opt/homebrew/lib/libopencv_flann.a; sourceTree = "<group>"; };
-		35B2CCA92D92F63600735D68 /* libopencv_highgui.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_highgui.a; path = ../../../../../opt/homebrew/lib/libopencv_highgui.a; sourceTree = "<group>"; };
-		35B2CCAB2D92F64100735D68 /* libopencv_imgcodecs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_imgcodecs.a; path = ../../../../../opt/homebrew/lib/libopencv_imgcodecs.a; sourceTree = "<group>"; };
-		35B2CCAD2D92F64C00735D68 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = ../../../../../opt/homebrew/lib/libopencv_imgproc.a; sourceTree = "<group>"; };
-		35B2CCAF2D92F66000735D68 /* libopencv_xfeatures2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_xfeatures2d.a; path = ../../../../../opt/homebrew/lib/libopencv_xfeatures2d.a; sourceTree = "<group>"; };
-		35B2CCB12D92F73E00735D68 /* libopencv_video.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_video.a; path = ../../../../../opt/homebrew/lib/libopencv_video.a; sourceTree = "<group>"; };
-		35B2CCB32D92F74900735D68 /* libopencv_videoio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_videoio.a; path = ../../../../../opt/homebrew/lib/libopencv_videoio.a; sourceTree = "<group>"; };
-		35E3979C2D9D0C9C00406446 /* clip.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = clip.json; path = data/20250324_1430/clip.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		351D1A632DCA49B9004A93DD /* Exceptions for "Test" folder in "DatesetGeneratorTest" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				data/clip.json,
-				data/clip640x424.mov,
-				data/debug/testBoundingBoxFrame/frame_026059.png,
-				data/debug/testBoundingBoxFrameSerie/frame_000914.png,
-				data/debug/testBoundingBoxFrameSerie/frame_010423.png,
-				data/debug/testBoundingBoxFrameSerie/frame_010447.png,
-				data/debug/testBoundingBoxFrameSerie/frame_026059.png,
-				data/debug/testBoundingBoxFrameSerie/frame_035456.png,
-				data/debug/testBoundingBoxFrameSerie/frame_035683.png,
-				data/debug/testBoundingBoxFrameSerie/frame_035780.png,
-				data/maske640x424.png,
-			);
-			target = 358A10A02D952568009668B3 /* DatesetGeneratorTest */;
-		};
-		358A10B82D952EF7009668B3 /* Exceptions for "Dataset" folder in "DatesetGeneratorTest" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				DatasetGenerator.cpp,
-			);
-			target = 358A10A02D952568009668B3 /* DatesetGeneratorTest */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		358A10A22D952568009668B3 /* Test */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				351D1A632DCA49B9004A93DD /* Exceptions for "Test" folder in "DatesetGeneratorTest" target */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		35B2CC9A2D92F5B200735D68 /* Dataset */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				358A10B82D952EF7009668B3 /* Exceptions for "Dataset" folder in "DatesetGeneratorTest" target */,
-			);
-			path = Dataset;
-			sourceTree = "<group>";
-		};
-		35E397A42D9D5DED00406446 /* config */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = config;
-			sourceTree = "<group>";
-		};
-		35E397A72D9D6D1500406446 /* scripts */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = scripts;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		358A109E2D952568009668B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				358A10AE2D952EA5009668B3 /* libopencv_videoio.a in Frameworks */,
-				358A10AF2D952EA5009668B3 /* libopencv_xfeatures2d.a in Frameworks */,
-				358A10B02D952EA5009668B3 /* libopencv_video.a in Frameworks */,
-				358A10B12D952EA5009668B3 /* libopencv_imgproc.a in Frameworks */,
-				358A10B22D952EA5009668B3 /* libopencv_imgcodecs.a in Frameworks */,
-				358A10B32D952EA5009668B3 /* libopencv_highgui.a in Frameworks */,
-				358A10B42D952EA5009668B3 /* libopencv_flann.a in Frameworks */,
-				358A10B52D952EA5009668B3 /* libopencv_features2d.a in Frameworks */,
-				358A10B62D952EA5009668B3 /* libopencv_core.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,30 +69,107 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B2CCAA2D92F63A00735D68 /* libopencv_highgui.a in Frameworks */,
-				35B2CCAC2D92F64500735D68 /* libopencv_imgcodecs.a in Frameworks */,
-				351D1A4F2DCA3ED9004A93DD /* libopencv_videoio.a in Frameworks */,
-				351D1A4D2DCA3EC3004A93DD /* libopencv_imgproc.a in Frameworks */,
-				351D1A4E2DCA3ED0004A93DD /* libopencv_video.a in Frameworks */,
-				351D1A4C2DCA3EB4004A93DD /* libopencv_core.a in Frameworks */,
-				35B2CCA62D92F62000735D68 /* libopencv_features2d.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		359FB6E12DCB22FE00707525 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				359FB6DE2DCB22FE00707525 /* convert_yolo_to_createml.py */,
+				359FB6DF2DCB22FE00707525 /* make_one_json.py */,
+				359FB6E02DCB22FE00707525 /* split_train_val.py */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		35A7427F2DCB1AEE00F884FF /* config */ = {
+			isa = PBXGroup;
+			children = (
+				35A7427C2DCB1AEE00F884FF /* classes.txt */,
+				35A7427D2DCB1AEE00F884FF /* clip.json */,
+				35A7427E2DCB1AEE00F884FF /* maske_sw.png */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		35A742882DCB1B3400F884FF /* Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				35A742852DCB1B3400F884FF /* DatasetGenerator.hpp */,
+				35A742862DCB1B3400F884FF /* DatasetGenerator.cpp */,
+				35A742872DCB1B3400F884FF /* main.cpp */,
+			);
+			path = Dataset;
+			sourceTree = "<group>";
+		};
+		35A7428E2DCB1B9700F884FF /* testBoundingBoxFrame */ = {
+			isa = PBXGroup;
+			children = (
+				35A7428D2DCB1B9700F884FF /* frame_026059.png */,
+			);
+			path = testBoundingBoxFrame;
+			sourceTree = "<group>";
+		};
+		35A742962DCB1B9700F884FF /* testBoundingBoxFrameSerie */ = {
+			isa = PBXGroup;
+			children = (
+				35A7428F2DCB1B9700F884FF /* frame_000914.png */,
+				35A742902DCB1B9700F884FF /* frame_010423.png */,
+				35A742912DCB1B9700F884FF /* frame_010447.png */,
+				35A742922DCB1B9700F884FF /* frame_026059.png */,
+				35A742932DCB1B9700F884FF /* frame_035456.png */,
+				35A742942DCB1B9700F884FF /* frame_035683.png */,
+				35A742952DCB1B9700F884FF /* frame_035780.png */,
+			);
+			path = testBoundingBoxFrameSerie;
+			sourceTree = "<group>";
+		};
+		35A742982DCB1B9700F884FF /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				35A7428E2DCB1B9700F884FF /* testBoundingBoxFrame */,
+				35A742962DCB1B9700F884FF /* testBoundingBoxFrameSerie */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		35A7429C2DCB1B9700F884FF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				35A742982DCB1B9700F884FF /* debug */,
+				35A742992DCB1B9700F884FF /* clip.json */,
+				35A7429A2DCB1B9700F884FF /* clip640x424.mov */,
+				35A7429B2DCB1B9700F884FF /* maske640x424.png */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		35A7429E2DCB1B9700F884FF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				35A7429C2DCB1B9700F884FF /* data */,
+				35A7429D2DCB1B9700F884FF /* DatasetGeneratorTest.mm */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		35B2CC8F2D92F5B200735D68 = {
 			isa = PBXGroup;
 			children = (
-				35E397A72D9D6D1500406446 /* scripts */,
-				35E397A42D9D5DED00406446 /* config */,
-				35E3979C2D9D0C9C00406446 /* clip.json */,
+				35A742A02DCB1BF100F884FF /* .gitattributes */,
+				35A742A12DCB1BF100F884FF /* .gitignore */,
+				35A7427A2DCB132500F884FF /* Base.xcconfig */,
+				35A742792DCB12E700F884FF /* Debug.xcconfig */,
+				35A742782DCB127200F884FF /* Release.xcconfig */,
 				358A10B92D953073009668B3 /* Test.xctestplan */,
-				35B2CC9A2D92F5B200735D68 /* Dataset */,
-				358A10A22D952568009668B3 /* Test */,
-				35B2CCA22D92F60800735D68 /* Frameworks */,
+				359FB6E12DCB22FE00707525 /* scripts */,
+				35A7427F2DCB1AEE00F884FF /* config */,
+				35A742882DCB1B3400F884FF /* Dataset */,
 				35B2CC992D92F5B200735D68 /* Products */,
+				35A7429E2DCB1B9700F884FF /* Test */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,22 +180,6 @@
 				358A10A12D952568009668B3 /* DatesetGeneratorTest.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		35B2CCA22D92F60800735D68 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				35B2CCB32D92F74900735D68 /* libopencv_videoio.a */,
-				35B2CCB12D92F73E00735D68 /* libopencv_video.a */,
-				35B2CCAF2D92F66000735D68 /* libopencv_xfeatures2d.a */,
-				35B2CCAD2D92F64C00735D68 /* libopencv_imgproc.a */,
-				35B2CCAB2D92F64100735D68 /* libopencv_imgcodecs.a */,
-				35B2CCA92D92F63600735D68 /* libopencv_highgui.a */,
-				35B2CCA72D92F62600735D68 /* libopencv_flann.a */,
-				35B2CCA52D92F61900735D68 /* libopencv_features2d.a */,
-				35B2CCA32D92F60800735D68 /* libopencv_core.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,9 +196,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				358A10A22D952568009668B3 /* Test */,
 			);
 			name = DatesetGeneratorTest;
 			packageProductDependencies = (
@@ -218,9 +215,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				35B2CC9A2D92F5B200735D68 /* Dataset */,
 			);
 			name = Dataset;
 			packageProductDependencies = (
@@ -281,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A7429F2DCB1BA100F884FF /* DatasetGeneratorTest.mm in Sources */,
+				35A7428A2DCB1B3400F884FF /* DatasetGenerator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A7428B2DCB1B3400F884FF /* main.cpp in Sources */,
+				35A7428C2DCB1B3400F884FF /* DatasetGenerator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +294,7 @@
 /* Begin XCBuildConfiguration section */
 		358A10A62D952568009668B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A742792DCB12E700F884FF /* Debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +309,7 @@
 		};
 		358A10A72D952568009668B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A742782DCB127200F884FF /* Release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +324,7 @@
 		};
 		35B2CC9D2D92F5B200735D68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A7427A2DCB132500F884FF /* Base.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -375,11 +376,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/opt/homebrew/include/opencv4,
-					/opt/homebrew/include,
-				);
-				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -395,6 +393,7 @@
 		};
 		35B2CC9E2D92F5B200735D68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A7427A2DCB132500F884FF /* Base.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -439,11 +438,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					/opt/homebrew/include/opencv4,
-					/opt/homebrew/include,
-				);
-				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -458,32 +454,28 @@
 		};
 		35B2CCA02D92F5B200735D68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A742792DCB12E700F884FF /* Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96678C6NM2;
 				ENABLE_HARDENED_RUNTIME = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/opt/homebrew/lib,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		35B2CCA12D92F5B200735D68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A742782DCB127200F884FF /* Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96678C6NM2;
 				ENABLE_HARDENED_RUNTIME = NO;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/opt/homebrew/lib,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

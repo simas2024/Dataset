@@ -96,8 +96,6 @@ bool geringeErkennung(const std::vector<cv::Rect>& boxes, int min_count, int min
     for (const auto& box : boxes) {
         area_sum += box.area();
     }
-
-    // return (boxes.size()< static_cast<size_t>(min_count) && area_sum < min_area_sum);
     return (area_sum < min_area_sum);
 }
 
@@ -245,7 +243,7 @@ int main() {
                     }
                 }
                 std::cout << "Datensatz erstellt bei Frame " << start_frame_index << endl;
-                //gen.debugDataset(konturen_rs,boxen_rs,gefilterte_boxen_rs,ref_frame_maskiert_gray,frame_rs, start_frame_index, referenz_frame_num, debug_path, config);
+                gen.debugDataset(konturen_rs,boxen_rs,gefilterte_boxen_rs,ref_frame_maskiert_gray,frame_rs, start_frame_index, referenz_frame_num, debug_path, config);
                 std::string dateiname = std::format("frame_{:06}", start_frame_index);
                 gen.speichereFuerYolo(frame_rs, gefilterte_boxen_rs, yolo_path, dateiname);
                 // gen.speichereFuerCreateML(frame_rs, gefilterte_boxen_rs, ml_path, dateiname, CLASS_NAME);
