@@ -48,6 +48,7 @@ brew install opencv nlohmann-json
 For running the XCTest load the clip file via Git LFS:
 
 ```bash
+git lfs install
 git lfs pull
 ```
 
@@ -68,6 +69,15 @@ git lfs pull
 ### Test
 - Select the **`Dataset`** target
 - Press `⌘U` to run the XCTest
+
+<div align="center">
+<br/>
+<img align="center" title="XCTest result expected" width="400" src="./docs/XCTestScreen01.png">
+<div align="center">
+    In Xcode: Testplan with good results overview
+</div>
+</div>
+
 
 ### Run
 

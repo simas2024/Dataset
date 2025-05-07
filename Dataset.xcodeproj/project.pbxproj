@@ -28,9 +28,6 @@
 /* Begin PBXFileReference section */
 		358A10A12D952568009668B3 /* DatesetGeneratorTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatesetGeneratorTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		358A10B92D953073009668B3 /* Test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Test.xctestplan; sourceTree = "<group>"; };
-		359FB6DE2DCB22FE00707525 /* convert_yolo_to_createml.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = convert_yolo_to_createml.py; sourceTree = "<group>"; };
-		359FB6DF2DCB22FE00707525 /* make_one_json.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = make_one_json.py; sourceTree = "<group>"; };
-		359FB6E02DCB22FE00707525 /* split_train_val.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = split_train_val.py; sourceTree = "<group>"; };
 		35A742782DCB127200F884FF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		35A742792DCB12E700F884FF /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		35A7427A2DCB132500F884FF /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
@@ -75,16 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		359FB6E12DCB22FE00707525 /* scripts */ = {
-			isa = PBXGroup;
-			children = (
-				359FB6DE2DCB22FE00707525 /* convert_yolo_to_createml.py */,
-				359FB6DF2DCB22FE00707525 /* make_one_json.py */,
-				359FB6E02DCB22FE00707525 /* split_train_val.py */,
-			);
-			path = scripts;
-			sourceTree = "<group>";
-		};
 		35A7427F2DCB1AEE00F884FF /* config */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +152,6 @@
 				35A742792DCB12E700F884FF /* Debug.xcconfig */,
 				35A742782DCB127200F884FF /* Release.xcconfig */,
 				358A10B92D953073009668B3 /* Test.xctestplan */,
-				359FB6E12DCB22FE00707525 /* scripts */,
 				35A7427F2DCB1AEE00F884FF /* config */,
 				35A742882DCB1B3400F884FF /* Dataset */,
 				35B2CC992D92F5B200735D68 /* Products */,
